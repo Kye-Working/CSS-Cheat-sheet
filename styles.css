@@ -1,3 +1,32 @@
+
+
+body {
+  background-color: rgb(71, 71, 71);
+}
+
 h1 {
-  color: green;
+    color: green;
+}
+
+/* Fonts */
+/* .(class) : Select specific elements */
+.Test-fonts-class {
+  /* color : color of text */
+  color: greenyellow;
+  /* font-family : holds multiple fonts (incase a font is not supported) */
+  font-family: sans-serif,'Segoe UI', Verdana;
+  /* font-style : change font to style */
+  font-style: italic;
+  /* font-weight : thickness of text */
+  font-weight: 500;
+  /* font-size : size of font*/
+  font-size: 25px;
+}
+
+/* #(id) : Select specific elements (used for one unique element) */
+#Test-fonts-id {
+  color: lightblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
 }
