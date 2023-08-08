@@ -1,11 +1,28 @@
-
+/* * : any and all elements */
+* {
+  
+}
 
 body {
   background-color: rgb(71, 71, 71);
+  text-align: center;
+  width: 500px;
 }
 
 h1 {
-    color: green;
+    color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+}
+
+/* #(id) : Select specific elements (used for a single unique element) */
+#Test-fonts-id {
+  color: lightblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 /* Fonts */
@@ -20,13 +37,20 @@ h1 {
   /* font-weight : thickness of text */
   font-weight: 500;
   /* font-size : size of font*/
-  font-size: 25px;
+  font-size: 15px;
 }
 
-/* #(id) : Select specific elements (used for one unique element) */
-#Test-fonts-id {
-  color: lightblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+#Test-border {
+  color: yellow;
+  /* border-style : Style of border*/
+  border-style: solid;
+  border-color: orange;
+  /*border-(top/right/left/bottom) : Selects specific side of border*/
+  border-top-color: brown;
+  border-bottom-color: brown;
+  
+  /* border-radius : Adds rounded corners*/
+  border-radius: 10px;
+  /* padding : Genrates space around element*/
+  padding: 100px;
 }
