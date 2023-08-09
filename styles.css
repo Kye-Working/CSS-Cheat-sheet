@@ -1,6 +1,5 @@
 /* * : any and all elements */
 * {
-  
 }
 
 body {
@@ -10,7 +9,7 @@ body {
 }
 
 h1 {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 p {
@@ -20,7 +19,7 @@ p {
 /* #(id) : Select specific elements (used for a single unique element) */
 #Test-fonts-id {
   color: lightblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 300;
   font-size: 25px;
 }
@@ -31,7 +30,7 @@ p {
   /* color : color of text */
   color: greenyellow;
   /* font-family : holds multiple fonts (incase a font is not supported) */
-  font-family: sans-serif,'Segoe UI', Verdana;
+  font-family: sans-serif, "Segoe UI", Verdana;
   /* font-style : change font to style */
   font-style: italic;
   /* font-weight : thickness of text */
@@ -48,9 +47,30 @@ p {
   /*border-(top/right/left/bottom) : Selects specific side of border*/
   border-top-color: brown;
   border-bottom-color: brown;
-  
+
   /* border-radius : Adds rounded corners*/
   border-radius: 10px;
   /* padding : Genrates space around element*/
   padding: 100px;
+}
+
+#Test-background1 {
+  color: black;
+  background-color: brown;
+  /* background-attachment : used to lock background in place (if window re-shaped) */
+  background-attachment: fixed;
+}
+
+#Test-background2 {
+  color: black;
+  /*linear-gradient(to (directions)(colors)) : Adds a gradient for colors selected (to (direction) optional)*/
+  background: linear-gradient(to bottom, orange, brown);
+}
+
+#Test-background3 {
+  background-image: url(/extras/Background.png);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: cover;
 }
