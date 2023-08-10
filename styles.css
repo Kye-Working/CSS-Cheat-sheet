@@ -39,6 +39,28 @@ p {
   font-size: 15px;
 }
 
+/* Backgrounds */
+#Test-background1 {
+  color: black;
+  background-color: white;
+  /* background-attachment : used to lock background in place (if window re-shaped) */
+  background-attachment: fixed;
+}
+
+#Test-background2 {
+  color: black;
+  /*linear-gradient(to (directions)(colors)) : Adds a gradient for colors selected (to (direction) optional)*/
+  background: linear-gradient(to top, blue, lightblue);
+}
+
+#Test-background3 {
+  background-image: url(/extras/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Borders & padding*/
 #Test-border {
   color: yellow;
   /* border-style : Style of border*/
@@ -54,23 +76,23 @@ p {
   padding: 100px;
 }
 
-#Test-background1 {
+/* Margins*/
+#Test-margin1 {
   color: black;
-  background-color: brown;
-  /* background-attachment : used to lock background in place (if window re-shaped) */
-  background-attachment: fixed;
+  border-style: solid;
+  background-color: royalblue;
+  padding: 10px;
+  /*margin : Used to create or remove space around an element*/
+  /* (Using % makes it dynamically change with the page size) */
+  margin: 10%;
 }
 
-#Test-background2 {
+#Test-margin2 {
   color: black;
-  /*linear-gradient(to (directions)(colors)) : Adds a gradient for colors selected (to (direction) optional)*/
-  background: linear-gradient(to bottom, orange, brown);
-}
+  border-style: solid;
+  background-color: burlywood;
+  padding: 10px;
 
-#Test-background3 {
-  background-image: url(/extras/Background.png);
-  background-repeat: no-repeat;
-
-  background-position: center;
-  background-size: cover;
+  margin-left: 85px;
+  margin-bottom: 25px;
 }
