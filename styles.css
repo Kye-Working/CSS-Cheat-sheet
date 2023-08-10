@@ -94,5 +94,10 @@ p {
   padding: 10px;
 
   margin-left: 85px;
-  margin-bottom: 25px;
+}
+
+/* Floats */
+/* float : Used for positioning and formatting */
+#Test-float1 {
+  float: right;
 }
