@@ -101,3 +101,27 @@ p {
 #Test-float1 {
   float: right;
 }
+
+/* Pseudo-classes */
+/* Selector : pseudo-class {} : the pseudo-class is used to define a speicifc state of an element*/
+a:visited {
+  color: green;
+}
+
+a:hover {
+  background-color: aliceblue;
+}
+
+/* nth-child */
+li {
+  list-style-type: none;
+}
+
+#Nth-child1 li:nth-child(even) {
+  background-color: brown;
+}
+
+/* formulas can be passed through*/
+#Nth-child2 li:nth-child(3n + 1) {
+  background-color: whitesmoke;
+}
