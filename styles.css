@@ -39,6 +39,18 @@ p {
   font-size: 15px;
 }
 
+/* Shadows */
+#Test-shadow1 {
+  color: brown;
+  /*text-shadow: x-axis spread z-axis (color));*/
+  text-shadow: 10px -5px 3px red, 0px -10px 5px orange;
+}
+
+#Test-shadow2 {
+  color: goldenrod;
+  box-shadow: 1px 1px 1px black;
+}
+
 /* Backgrounds */
 #Test-background1 {
   color: black;
