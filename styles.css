@@ -4,12 +4,12 @@
 
 body {
   background-color: rgb(71, 71, 71);
-  text-align: center;
   width: 500px;
 }
 
 h1 {
   color: aliceblue;
+  text-align: center;
 }
 
 p {
@@ -135,5 +135,54 @@ li {
 
 /* formulas can be passed through*/
 #Nth-child2 li:nth-child(3n + 1) {
-  background-color: whitesmoke;
+  background-color: lightseagreen;
+}
+
+/* positioning */
+#Test-positioning1 {
+  color: black;
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  font-size: 50px;
+  text-align: center;
+}
+
+#Test-positioning2 {
+  color: black;
+  width: 100px;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  font-size: 50px;
+  text-align: center;
+
+  /*relative : position relative to normal position*/
+  position: relative;
+
+  bottom: 20px;
+  left: 100px;
+}
+
+/* Animation */
+#Test-animation1 {
+  color: black;
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  font-size: 50px;
+  text-align: center;
+  /*Calls the animation*/
+  animation: Slide;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+/*keyframes are the different waypoints the animation will use*/
+@keyframes Slide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
