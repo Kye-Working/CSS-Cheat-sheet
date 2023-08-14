@@ -16,6 +16,10 @@ p {
   color: aliceblue;
 }
 
+#Text {
+  font-size: 25px;
+}
+
 /* #(id) : Select specific elements (used for a single unique element) */
 #Test-fonts-id {
   color: lightblue;
@@ -185,4 +189,69 @@ li {
   to {
     margin-left: 0%;
   }
+}
+
+/*Grid layout*/
+#Grid-box {
+  display: grid;
+  /*Grid layour*/
+  grid-template-areas:
+    "head head head"
+    "side content content"
+    "foot foot foot";
+  text-align: center;
+  grid-template-rows: 100px 250px auto;
+  border: solid;
+}
+
+header {
+  grid-area: head;
+  border: solid;
+  background-color: brown;
+}
+
+article {
+  grid-area: content;
+  border: solid;
+  background-color: aqua;
+}
+
+aside {
+  grid-area: side;
+  border: solid;
+  background-color: green;
+}
+
+footer {
+  grid-area: foot;
+  border: solid;
+  background-color: blanchedalmond;
+}
+
+/*Flexbox layout*/
+.main {
+  flex-direction: row;
+}
+
+.Container1 {
+  border: solid;
+  flex-direction: row;
+  text-align: center;
+}
+
+.Container2 {
+  display: flex;
+  border: solid;
+  flex-direction: column;
+  text-align: center;
+}
+
+.item1 {
+  background-color: aqua;
+  flex: 1;
+}
+
+.item2 {
+  background-color: green;
+  flex: 5;
 }
