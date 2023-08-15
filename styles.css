@@ -229,29 +229,13 @@ footer {
 }
 
 /*Flexbox layout*/
-.main {
-  flex-direction: row;
-}
-
-.Container1 {
-  border: solid;
-  flex-direction: row;
-  text-align: center;
-}
-
-.Container2 {
+.container {
   display: flex;
   border: solid;
   flex-direction: column;
-  text-align: center;
 }
 
-.item1 {
-  background-color: aqua;
-  flex: 1;
-}
-
-.item2 {
-  background-color: green;
-  flex: 5;
+.item {
+  border: solid;
+  padding: 10px;
 }
